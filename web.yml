@@ -1,0 +1,2 @@
+basic_auth_users:
+  prometheus-admin: $2a$10$uh/XhGDvwojZPCMvi9fqaexJBWqlWc1KU4LqCtVEZVtj1gCJO3oKq
