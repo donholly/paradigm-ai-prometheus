@@ -1,7 +1,8 @@
 FROM prom/prometheus
 
-# copy the Prometheus configuration file
+# copy the Prometheus configuration files
 COPY prometheus.yml /etc/prometheus/prometheus.yml
+COPY web.yml /etc/prometheus/web.yml
 
 # expose the Prometheus server port
 EXPOSE 9090
