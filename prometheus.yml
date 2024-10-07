@@ -17,6 +17,13 @@ scrape_configs:
     static_configs:
       - targets: ["ai-api-staging.paradigmiq.com"]
 
+  - job_name: "ai-api-production"
+    scrape_interval: 5s
+    scheme: "https"
+    metrics_path: "/prometheus/metrics"
+    static_configs:
+      - targets: ["ai-api.paradigmiq.com"]
+
   # - job_name: 'postgres'
   #   scrape_interval: 5s
   #   static_configs:
