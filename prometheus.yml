@@ -11,14 +11,14 @@ global:
 scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
   - job_name: "ai-api-staging"
-    scrape_interval: 5s
+    scrape_interval: 30s
     scheme: "https"
     metrics_path: "/prometheus/metrics"
     static_configs:
       - targets: ["ai-api-staging.paradigmiq.com"]
 
   - job_name: "ai-api-production"
-    scrape_interval: 5s
+    scrape_interval: 30s
     scheme: "https"
     metrics_path: "/prometheus/metrics"
     static_configs:
